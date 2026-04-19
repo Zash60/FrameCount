@@ -121,6 +121,34 @@
             android:text="Frame Time: 0"
             android:textAppearance="?attr/textAppearanceBodyMedium" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mod Note"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <EditText
+            android:id="@+id/etModNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mod Note template"
+            android:minLines="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Computation Breakdown"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <TextView
+            android:id="@+id/tvComputationBreakdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakdown details..."
+            android:textAppearance="?attr/textAppearanceBodySmall" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
