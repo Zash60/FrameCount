@@ -174,7 +174,7 @@ class SegmentsFragment : Fragment() {
             if (frameParts.size == 2) {
                 val start = frameParts[0].trim().toIntOrNull() ?: continue
                 val end = frameParts[1].trim().toIntOrNull() ?: continue
-                viewModel.addSegment(label)
+                viewModel.addSegment(label, start, end)
             }
         }
     }

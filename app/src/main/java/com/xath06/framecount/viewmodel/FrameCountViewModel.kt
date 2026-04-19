@@ -73,8 +73,6 @@ class FrameCountViewModel : ViewModel() {
 
     private fun updateModNote(start: Int, end: Int, fps: Double, videoTime: Double) {
         val template = modNoteTemplate.value ?: ""
-        val startTime = TimeFormatter.formatTime(videoTime * fps * start)
-        val endTime = TimeFormatter.formatTime(videoTime * fps * end)
 
         val note = template
             .replace("\${startFrame}", start.toString())

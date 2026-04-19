@@ -124,7 +124,6 @@ class VideoInputFragment : Fragment() {
     }
 
     private fun stepTime(seconds: Double) {
-        val fps = viewModel.videoFps.value ?: 60.0
         val currentMs = viewModel.currentPositionMs.value ?: 0L
         val deltaMs = (seconds * 1000).toLong()
         val newMs = (currentMs + deltaMs).coerceAtLeast(0)
