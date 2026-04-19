@@ -61,9 +61,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardHeader">
 
-        <!-- Results section -->
-        <!-- Segments section -->
-        <!-- Playback section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playback"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <TextView
+            android:id="@+id/tvVideoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Time: 0"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+        <TextView
+            android:id="@+id/tvFrameTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frame Time: 0"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
 
     </LinearLayout>
 
