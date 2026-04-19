@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ANDROID_HOME: /opt/android-sdk
+      ANDROID_SDK_ROOT: /opt/android-sdk
 
     steps:
       - name: Checkout code
@@ -22,7 +25,6 @@ jobs:
 
       - name: Setup Android SDK
         run: |
-          unset ANDROID_SDK_ROOT
           mkdir -p /opt/android-sdk/cmdline-tools
           cd /opt/android-sdk/cmdline-tools
           curl -sL https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -o cmdline-tools.zip
@@ -30,7 +32,6 @@ jobs:
           mv cmdline-tools latest
           yes | /opt/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null 2>&1 || true
           /opt/android-sdk/cmdline-tools/latest/bin/sdkmanager "platforms;android-35" "build-tools;35.0.0"
-          echo "ANDROID_HOME=/opt/android-sdk" >> $GITHUB_ENV
 
       - name: Cache Gradle packages
         uses: actions/cache@v4
