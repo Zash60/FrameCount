@@ -45,6 +45,22 @@ class VideoInputFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupButtons()
         setupPlayerControls()
+        setupSidebarObservers()
+    }
+
+    private fun setupSidebarObservers() {
+        viewModel.getPlaybackInfo().let {
+            binding.tvVideoTime.text = "Video Time: ${it.videoTimeFormatted}"
+            binding.tvFrameTime.text = "Frame Time: ${it.frameTimeFormatted}"
+        }
+
+        viewModel.modNote.observe(viewLifecycleOwner) { note ->
+            binding.etModNote.setText(note)
+        }
+
+        viewModel.computationBreakdown.observe(viewLifecycleOwner) { breakdown ->
+            binding.tvComputationBreakdown.text = breakdown
+        }
     }
 
     private fun setupButtons() {
