@@ -22,6 +22,7 @@ jobs:
 
       - name: Setup Android SDK
         run: |
+          unset ANDROID_SDK_ROOT
           mkdir -p /opt/android-sdk/cmdline-tools
           cd /opt/android-sdk/cmdline-tools
           curl -sL https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -o cmdline-tools.zip
