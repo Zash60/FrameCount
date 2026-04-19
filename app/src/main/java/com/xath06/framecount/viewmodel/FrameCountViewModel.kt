@@ -123,12 +123,12 @@ class FrameCountViewModel : ViewModel() {
         }
     }
 
-    fun addSegment(label: String = "") {
+    fun addSegment(label: String = "", start: Int? = null, end: Int? = null) {
         val current = segments.value?.toMutableList() ?: mutableListOf()
         val segment = Segment(
             label = label,
-            startFrame = startFrame.value ?: 0,
-            endFrame = endFrame.value ?: 0,
+            startFrame = start ?: (startFrame.value ?: 0),
+            endFrame = end ?: (endFrame.value ?: 0),
             loadFrames = loadFrames.value ?: 0
         )
         current.add(segment)
