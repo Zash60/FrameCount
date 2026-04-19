@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FrameCount</string>
+
+    <!-- Tabs -->
+    <string name="tab_video">Video</string>
+    <string name="tab_timing">Timing</string>
+    <string name="tab_results">Results</string>
+    <string name="tab_segments">Segments</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Video Input -->
+    <string name="video_input">Video Input</string>
+    <string name="local_video">Local Video (mp4, mkv, webm)</string>
+    <string name="remote_video">Remote Video</string>
+    <string name="video_url">Video URL (YouTube, Twitch, Vimeo)</string>
+    <string name="load_remote">Load Remote</string>
+    <string name="twitch_login">Twitch Login</string>
+
+    <!-- Player Controls -->
+    <string name="play_pause">Play/Pause</string>
+    <string name="frame_controls">Frame Controls</string>
+    <string name="time_controls">Time Controls</string>
+    <string name="jump_controls">Minute Jumps</string>
+    <string name="set_start">[ Set Start]</string>
+    <string name="set_end">] Set End</string>
+
+    <!-- Frame Buttons -->
+    <string name="minus_10f">-10f</string>
+    <string name="minus_5f">-5f</string>
+    <string name="minus_1f">-1f</string>
+    <string name="plus_1f">+1f</string>
+    <string name="plus_5f">+5f</string>
+    <string name="plus_10f">+10f</string>
+
+    <!-- Time Buttons -->
+    <string name="minus_10s">-10s</string>
+    <string name="minus_5s">-5s</string>
+    <string name="minus_1s">-1s</string>
+    <string name="plus_1s">+1s</string>
+    <string name="plus_5s">+5s</string>
+    <string name="plus_10s">+10s</string>
+
+    <!-- Minute Buttons -->
+    <string name="minus_10m">-10m</string>
+    <string name="minus_5m">-5m</string>
+    <string name="minus_1m">-1m</string>
+    <string name="plus_1m">+1m</string>
+    <string name="plus_5m">+5m</string>
+    <string name="plus_10m">+10m</string>
+
+    <!-- Timing Details -->
+    <string name="timing_details">Timing Details</string>
+    <string name="video_fps">Video FPS</string>
+    <string name="detect_fps">Detect FPS</string>
+    <string name="current_frame">Current Frame:</string>
+    <string name="start_frame">Start Frame</string>
+    <string name="end_frame">End Frame</string>
+    <string name="go">Go</string>
+    <string name="set_start_bracket">[</string>
+    <string name="set_end_bracket">]</string>
+
+    <!-- Console Settings -->
+    <string name="console_settings">Console Settings</string>
+    <string name="console_preset">Console Preset</string>
+    <string name="console_fps">Console FPS:</string>
+
+    <!-- Load Segments -->
+    <string name="load_segments">Load Segments</string>
+    <string name="add_load">+ Add</string>
+    <string name="clear">Clear</string>
+    <string name="total_load_frames">Total Load Frames:</string>
+
+    <!-- Playback Info -->
+    <string name="playback_info">Playback Info</string>
+    <string name="video_time_seconds">Video Time (s)</string>
+    <string name="video_time_formatted">Video Time</string>
+    <string name="frame_time_seconds">Frame Time (s)</string>
+    <string name="frame_time_formatted">Frame Time</string>
+
+    <!-- Results -->
+    <string name="results">Results</string>
+    <string name="frame_count_result">Frame Count Result</string>
+    <string name="frame_count">Frame Count</string>
+    <string name="timing_results">Timing Results</string>
+    <string name="video_fps_label">Video FPS</string>
+    <string name="video_time">Video Time</string>
+    <string name="console_time">Console Time</string>
+    <string name="console_frames">Console Frames</string>
+
+    <!-- Segments -->
+    <string name="segments">Segments</string>
+    <string name="add_segment">+ Add Segment</string>
+    <string name="remove_last">Remove Last</string>
+    <string name="clear_all">Clear All</string>
+    <string name="segment_options">Segment Options</string>
+    <string name="expand_details">Expand details</string>
+    <string name="include_start_frame">Include start frame</string>
+    <string name="reverse_segments">Reverse segments</string>
+    <string name="copy_functions">Copy Functions</string>
+    <string name="copy_frames">Copy Frames (S)</string>
+    <string name="copy_times">Copy Times (E)</string>
+    <string name="labels_frames">Labels + Frames</string>
+    <string name="labels_times">Labels + Times</string>
+    <string name="total_segments">Total Segments</string>
+    <string name="total_frames">Frames</string>
+    <string name="total_video_time">Video Time</string>
+    <string name="total_console_time">Console Time</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="speedrun_api_key">speedrun.com API Key</string>
+    <string name="defaults">Defaults</string>
+    <string name="default_console">Default Console</string>
+    <string name="default_video_fps">Default Video FPS</string>
+    <string name="mod_note_template">Mod Note Template</string>
+    <string name="template">Template</string>
+    <string name="save">Save</string>
+    <string name="restore_default">Restore Default</string>
+</resources>
