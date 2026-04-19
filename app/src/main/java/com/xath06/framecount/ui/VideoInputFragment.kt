@@ -49,7 +49,7 @@ class VideoInputFragment : Fragment() {
 
     private fun setupButtons() {
         binding.btnLocalVideo.setOnClickListener {
-            filePickerLauncher.launch(arrayOf("video/mp4", "video/x-matroska", "video/webm"))
+            filePickerLauncher.launch("video/*")
         }
 
         binding.btnRemoteVideo.setOnClickListener {
@@ -73,7 +73,7 @@ class VideoInputFragment : Fragment() {
             }
         }
 
-        binding.btnSeekbar.setOnSeekBarChangeListener(object : android.widget.SeekBar.OnSeekBarChangeListener {
+        binding.seekbar.setOnSeekBarChangeListener(object : android.widget.SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: android.widget.SeekBar?, progress: Int, fromUser: Boolean) {
                 if (fromUser) {
                     val duration = viewModel.videoDurationMs.value ?: 0L
@@ -143,7 +143,7 @@ class VideoInputFragment : Fragment() {
         binding.webView.webChromeClient = WebChromeClient()
         binding.webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView?, url: String?) {
-                super.onPageFound(view, url)
+                super.onPageFinished(view, url)
             }
         }
         binding.webView.loadUrl("https://www.twitch.tv/login")
