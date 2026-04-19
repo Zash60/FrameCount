@@ -39,4 +39,4 @@ Or use Android Studio to open the project.
 
 ## License
 
-MIT
+MITTriggering CI
